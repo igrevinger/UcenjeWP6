@@ -46,7 +46,7 @@ create table zivotinja(
 sifra int not null primary key identity(1,1),
 vrsta varchar(50) not null,
 ime varchar(50) not null,
-djelatnik int not null,
-prostorija int not null,
+djelatnik int not null references djelatnik(sifra),
+prostorija int not null references prostorija(sifra),
 datum int not null references datum(sifra)
 );
