@@ -24,11 +24,11 @@
 --smjer int
 --);
 
---razlika varchar i char
---varchar(10)
---'Ana'
---char(10)
---'Ana        '
+-- razlika varchar i char
+-- varchar(10)
+-- 'Ana'
+-- char(10)
+-- 'Ana       '
 
 --create table polaznici(
 --sifra int,
@@ -38,8 +38,8 @@
 --oib char(11)
 --);
 
---create table clanovi(
---grupa int,
---polaznici int,
---);
+create table clanovi(
+grupa int,
+polaznik int
+);
 
