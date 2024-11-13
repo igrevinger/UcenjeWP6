@@ -25,7 +25,7 @@ create table djelatnik(
 sifra int not null primary key identity(1,1),
 ime varchar(50) not null,
 prezime varchar(50) not null,
-IBAN varchar(50)
+IBAN varchar(50) not null
 );
 
 create table prostorija(
