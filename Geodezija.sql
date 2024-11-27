@@ -34,7 +34,7 @@ zaposlenik int not null references zaposlenici(sifra),
 instrument int not null references instrumenti(sifra),
 poslovi int not null references poslovi(sifra),
 datum datetime,
-napomena varchar(70) null
+napomena varchar(200) null
 );
 
 insert into zaposlenici (ime, prezime, oib)
