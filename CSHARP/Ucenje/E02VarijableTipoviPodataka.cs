@@ -9,33 +9,34 @@
 
             //Console.WriteLine("Hello E02");
 
-            // int - integer - cijeli broj
+            //int - integer - cijeli broj
 
-            // deklaracija varijable
-            int i; // i je od increment
+            //deklaracija varijable
+            int i; //i je od oncrement
 
 
-            Console.Write("Upiši broj: ");
-            // dodjeljivanje vrijednosti
-            // i = Console.ReadLine();  OVO NE RADI jer je desno string a lijevo int
+            Console.WriteLine("Upiši broj: ");
+            //dodjeljivanje vrijednosti
+            //i = Console.ReadLine(); OVO NE RADI jer je desno string a lijevo int
 
-            i=int.Parse(Console.ReadLine());
+            
+            i = int.Parse(Console.Readline());
 
-            // korištenje vrijednosti
+
+            //korištenje vrijednosti
             Console.WriteLine("Upisali ste {0}, i evo ga još jednom {1}", i,i);
 
+            //bit - logička vrijednost
 
-            // bit - logička vrijednost
-
-            bool LogickaVrijednost;
+            bool logickaVrijednost:
 
             Console.Write("Unesi True ili False: ");
 
-            LogickaVrijednost = bool.Parse(Console.ReadLine());
+            logickaVrijednost = bool.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Unijeli ste {0}", logickaVrijednost);
 
-            Console.WriteLine("Unijeli ste {0}", LogickaVrijednost);
-
-            // float - decimalni broj
+            //float - decimalni broj
 
             Console.Write("Unesi broj (, za decimalni dio): ");
 
@@ -43,13 +44,15 @@
 
             float broj = 3.14F; // zato što je to float
 
-
-            Console.Write("Unesi ime: ");
+            Console.WriteLine("Unesi ime: ");
 
             string ime = Console.ReadLine();
 
             Console.WriteLine("Unio sam \n{0}\n{1}\n{2}\n{3}",
-                i,LogickaVrijednost,broj,ime);
+                i, logickaVrijednost, broj, ime);
+
+                        
+
 
 
 
