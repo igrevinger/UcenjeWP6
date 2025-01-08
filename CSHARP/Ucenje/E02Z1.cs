@@ -11,13 +11,7 @@
         public static void Izvedi()
         {
 
-            Console.Write("Unesi ime: ");
-            string ime = Console.ReadLine();
-
-            Console.WriteLine("Unesi broj godina (cijeli broj): ");
-            int godine = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Osoba {0} ima {1} godina.", ime, godine);
+            //ovdje se piše rješenje tadatka
            
 
         }
