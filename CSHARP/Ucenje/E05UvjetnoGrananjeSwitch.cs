@@ -15,7 +15,7 @@ namespace Ucenje
 
             int i = 2;
 
-            switch (i)
+            switch(i)
             {
                 case 1:
                     Console.WriteLine("Nedovoljan");
@@ -28,14 +28,12 @@ namespace Ucenje
                     break;
             }
 
-            // switch radi s int, string, char i drugi https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/statements#1383-the-switch-statement
-
 
             char znak = '@';
             Console.WriteLine(znak);
             Console.WriteLine((int)znak);
             
-            
+
         }
 
     }
