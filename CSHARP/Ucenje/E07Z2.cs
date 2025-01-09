@@ -11,6 +11,22 @@ namespace Ucenje
     {
         // Za dva unesena cijela broja ispisati sve brojeve između njih
         
+        public static void Izvedi()
+        {
+            Console.WriteLine("Unesite prvi broj");
+            int pb=int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Unesite drugi broj");
+            int db = int.Parse(Console.ReadLine());
+
+
+            for(int i = pb; i < db; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+        }
       
 
     }
