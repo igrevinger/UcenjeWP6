@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,18 +21,13 @@ namespace Ucenje
                 Console.WriteLine("Osijek");
             } while (false);
 
-
-            // zbroj prvih 100 brojeva
-
-            int i = 1, suma = 0;
+            int i = 1, sum = 0;
             do
             {
-                suma += i;
-            }while (++i<=100);
+                sum += i
+            } while (++i <= 100);
 
-            Console.WriteLine(suma);
-            // sve ostalo vrijedi kao i za for i while
-
+            Console.WriteLine(sum);
 
         }
 
