@@ -15,12 +15,10 @@ namespace Ucenje
 
             Console.Write("Unesi ime svog grada: ");
 
-            string grad = Console.ReadLine();
+            string grad=Console.ReadLine();
 
-            Console.WriteLine(grad);
+            Console.Write(grad);
 
-            // string je zapravo niz znakova char[]
-            // za Osijek 
             char[] znakoviGrad = new char[6];
             znakoviGrad[0] = 'O';
             znakoviGrad[1] = 's';
@@ -28,20 +26,18 @@ namespace Ucenje
             znakoviGrad[3] = 'j';
             znakoviGrad[4] = 'e';
             znakoviGrad[5] = 'k';
-
-            for(int i = 0; i < 6; i++)
+            for(int i= 0; i < 6; i++)
             {
                 Console.Write(znakoviGrad[i]);
             }
             Console.WriteLine();
 
-            for(int i = 0;i<grad.Length; i++)
+            for(int i= 0;i<grad.Length; i++)
             {
                 Console.Write(grad[i]);
             }
             Console.WriteLine();
 
-            // često se šećemo od početka do kraja
             foreach (char znak in znakoviGrad)
             {
                 Console.Write(znak);
@@ -50,19 +46,15 @@ namespace Ucenje
 
             foreach (char c in grad)
             {
-                Console.Write(c);
+                Console.WriteLine(c);
             }
             Console.WriteLine();
 
-            // ispiši uneseni grad unazad
-            // Valpovo   ovoplav
-
-            for(int i = grad.Length - 1; i >= 0; i--)
+            for(int i=grad.Length-1; i>=0; i--)
             {
                 Console.Write(grad[i]);
             }
-
-
+            Console.WriteLine();
         }
     }
 }
