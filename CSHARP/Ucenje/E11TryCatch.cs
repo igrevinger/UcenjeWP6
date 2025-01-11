@@ -12,22 +12,24 @@ namespace Ucenje
         public static void Izvedi()
         {
             //Console.WriteLine("E11");
+
             int broj;
             while (true)
             {
-                try
-                {
-                    Console.Write("Unesi cijeli broj: ");
-                    broj = int.Parse(Console.ReadLine());
-                    break;
-                }
-                catch
+              try
+              {
+                Console.WriteLine("Unesi cijeli broj: ");
+                broj = int.Parse(Console.ReadLine());
+                break;
+              }
+                catch 
                 {
                     Console.WriteLine("Nisi unio cijeli broj!");
                 }
+                
+               
             }
-            //Console.WriteLine("Bravo, unijeli ste {0}",broj);
-
+            Console.WriteLine("Bravo, unijeli ste {0}",broj);
 
             int godine;
             while (true)
@@ -35,76 +37,70 @@ namespace Ucenje
                 Console.Write("Unesi svoj broj godina: ");
                 try
                 {
-                    godine = int.Parse(Console.ReadLine());
-                    if (godine < 1 || godine > 104)
+                    godine= int.Parse(Console.ReadLine());
+                    if (godine < 1 || godina > 104)
                     {
                         Console.WriteLine("Uneseni broj godina nije dobar!");
                         continue;
                     }
                     break;
                 }
-                catch
-                {
-                    Console.WriteLine("Nisi dobro unio broj godina");
-
-                }
-            }
-            Console.WriteLine("Broj godina osobe je {0}", godine);
-
-            // unesi grad
-            string grad;
-            int ascii;
-            bool ok;
-            for (; ; )
-            {
-                Console.Write("Unesi ime grada: ");
-                grad = Console.ReadLine().Trim();
-                if(grad.Length==0)
-                {
-                    Console.WriteLine("Nisi unio ime grada");
-                    continue;
-                }
-                // ovdje sam siguran da je nešto unio
-
-                try
-                {
-                    int.Parse(grad);
-                    Console.WriteLine("Ime grada ne može biti broj");
-                    continue;
-                }
                 catch 
                 {
-
-                    
+                    Console.WriteLine("Nisi dobro unio brojgodina!");
                 }
-                // ovdje sam siguran da nije unio broj
+                Console.WriteLine("Broj godina osobe je {0}",godine);
 
-                //problem 0sijek, Os!jek, Osi jek
-                ok = true;
-                foreach(char c in grad.ToUpper())
+                string grad;
+                int ascii;
+                bool ok
+                for(; ; )
                 {
-                    ascii = (int)c;
-                    if(ascii <65 || ascii > 90) //
+                    Console.Write("Unesi ime grada: ");
+                    grad= Console.ReadLine().Trim();
+                    if(grad.Length == 0)
                     {
-                        ok = false;
-                        break;
+                        Console.WriteLine("Nisi unio ime grada!");
+                        continue;
                     }
+
+                    try
+                    {
+                        int.Parse(grad);
+                        Console.WriteLine("Ime grada ne može bitibroj!");
+                        continue;
+                    }
+                    catch
+                    {
+
+                    }
+
+                    ok=true;
+                    foreach(char c in grad)
+                    {
+                        ascii=(int)c;
+                        if (ascii < 65 && ascii > 90)
+                        {
+                            ok= false; 
+                            break;
+                        }
+                    }
+
+                    if (!ok)
+                    {
+                        Console.WriteLine("Problem s jednim od znakova u nazivu grada")
+                        continue;
+                    }
+
+                    break;
                 }
-                if (!ok)
-                {
-                    Console.WriteLine("Problem s jednim od znakova u nazivu grada");
-                    continue;
-                }
+                Console.WriteLine("Unijeli ste >{0}<",grad);
 
 
 
-                break;
+
+
             }
-            Console.WriteLine("Unijeli ste: >{0}<",grad);
-
-
-
-
 
         }
 
