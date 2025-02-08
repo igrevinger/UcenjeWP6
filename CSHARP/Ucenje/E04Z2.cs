@@ -16,18 +16,18 @@ namespace Ucenje
         public static void Izvedi()
         {
             //Console.WriteLine("E04");
-            Console.WriteLine("Unesite cijeli broj: ");
+            Console.WriteLine("Unesi cijeli broj:");
             int broj = int.Parse(Console.ReadLine());
-            if(broj%2==0)
+            if(broj%2 == 0)
             {
-                Console.WriteLine("Paran")
+                Console.WriteLine("Paran.");
             }
             else
             {
-                Console.WriteLine("Neparan");
+                Console.WriteLine("Neparan.");
             }
 
-            Console.WriteLine(broj %2 ==0 ? "Paran" : "Neparan");
+            // sada dajte rješenje s inline if
 
         }
     }

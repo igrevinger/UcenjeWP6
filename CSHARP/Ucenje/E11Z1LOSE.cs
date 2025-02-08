@@ -17,37 +17,34 @@ namespace Ucenje
 
             while (true)
             {
-                Console.WriteLine("Unesi prvi broj: ");
-
+                Console.Write("Unesi prvi broj: ");
                 try
                 {
-                    broj1=int.Parse(Console.ReadLine());
+                    broj1 = int.Parse(Console.ReadLine());
                     break;
                 }
-                catch ()
+                catch 
                 {
-                    Console.WriteLine("Nisi unio broj!");
+                    Console.WriteLine("Nisi unio broj");
                 }
             }
 
+
             while (true)
             {
-                Console.WriteLine("Unesi drugi broj: ");
-
+                Console.Write("Unesi drugi broj: ");
                 try
                 {
                     broj2 = int.Parse(Console.ReadLine());
                     break;
                 }
-                catch ()
+                catch
                 {
-                    Console.WriteLine("Nisi unio broj!");
+                    Console.WriteLine("Nisi unio broj");
                 }
             }
 
-            Console.WriteLine("{0}+{1}={2}",broj1,broj2,broj1+broj2); 
-
-        }
+            Console.WriteLine("{0} + {1} = {2}", broj1,broj2, broj1+broj2);
 
 
         }

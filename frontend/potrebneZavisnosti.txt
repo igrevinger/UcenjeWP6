@@ -1,0 +1,4 @@
+U CMD direktorij frontend izvesti
+
+npm install react-bootstrap bootstrap
+npm install react-router-dom

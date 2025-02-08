@@ -28,12 +28,6 @@ namespace Ucenje
             {
                 Console.WriteLine("Maloljetan");
             }
-
-            if (godine<0 & godine>112)
-            {
-                Console.WriteLine("GREŠKA");
-            }
-
         }
     }
 }
