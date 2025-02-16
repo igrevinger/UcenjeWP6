@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E17KlasaObjekt.zavrsnirad
 {
-    public class Zaposlenik
+    public class Zaposlenik : Entitet
     {
-        public int Sifra {  get; set; }
-        public string Ime { get; set; } = "";
-        public string Prezime { get; set; } = "";
-        public string? Oib { get; set; }
-
-        public string ImePrezime() 
-        {  
-            return Ime+ " " + Prezime; 
-        }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public string Oib { get; set; }
     }
 }

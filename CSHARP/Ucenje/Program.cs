@@ -2,7 +2,7 @@
 
 using Ucenje;
 
-new E21Subota();
+//new E21Subota();
 
 //new Ucenje.E20KonzolnaAplikacija.Izbornik();
 
@@ -13,6 +13,7 @@ new E21Subota();
 // nova instanca klase program
 //new Ucenje.E17KlasaObjekt.Program();
 
+new Ucenje.E17KlasaObjekt.zavrsnirad.Program();
 
 //E14Vjezbanje.Izvedi();
 

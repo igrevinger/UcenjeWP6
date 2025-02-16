@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E17KlasaObjekt.zavrsnirad
 {
-    public class Posao
+    public class Posao : Entitet
     {
-        public int Sifra { get; set; }
-        public string Naziv { get; set; } = "";
-        public string Vrsta { get; set; } = "";
+        public string Naziv { get; set; }
+        public int Vrsta { get; set; }
+        public VrstaPosla VrstaPosla { get; set; }
     }
 }
